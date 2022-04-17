@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+	int n,m,i,j;
+	scanf("%d",&n);
+	char z[n][15];
+	int a[n],b[n];
+	for(i=0;i<n;i++)
+	{
+		scanf("%s %d %d",z[i],&a[i],&b[i]);
+	}
+	scanf("%d",&m);
+	int c[m];
+	for(i=0;i<m;i++)
+	{
+		scanf("%d",&c[i]);
+	}
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++){
+		if(c[i]==a[j])
+		{
+			printf("%s %d\n",z[j],b[j]);
+		}
+	}
+}
+}
